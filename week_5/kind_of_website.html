@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/styles/normalize.css">
+    <title>Document</title>
+</head>
+
+<style>
+    header {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        height: 8vh;
+        background-color: rgb(215, 218, 221);
+        font-weight: bold;
+    }
+
+    main {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        height: 40vh;
+    }
+
+    .div_section {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        box-sizing: border-box;
+        width: 60%;
+        background-color: rgb(255, 255, 213);
+        font-weight: bold;
+    }
+
+    p {
+        width: 100%;
+        text-align: center;
+    }
+
+    .main_section {
+        flex-grow: 1;
+        align-self: center;
+        padding: 3%;
+        margin: 2%;
+        background-color: rgb(255, 229, 181);
+        text-align: center;
+    }
+
+    #three {
+        align-self: center;
+        box-sizing: border-box;
+        padding: 3%;
+        margin: 2%;
+        width: 100%;
+        background-color: rgb(255, 229, 181);
+        text-align: center;
+    }
+
+    #sidebar {
+        display: flex;
+        justify-content: center;
+        box-sizing: border-box;
+        width: 40%;
+        background-color: rgb(219, 255, 210);
+        font-weight: bold;
+    }
+
+    footer {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        box-sizing: border-box;
+        height: 8vh;
+        background-color: rgb(215, 218, 221);
+    }
+
+    .footer_section {
+        padding: 0.5%;
+        margin: 1%;
+        background-color: white;
+        font-weight: bold;
+    }
+</style>
+
+<body>
+
+    <header>[Шапка страницы]</header>
+    <main>
+        <div class="div_section">
+            <p>[Основная часть]</p>
+            <section class="main_section">[Ещё 1]</section>
+            <section class="main_section">[Ещё 2]</section>
+            <section id="three">[Ещё 3]</section>
+        </div>
+        <aside id="sidebar">
+            <p>[Боковая область]</p>
+        </aside>
+    </main>
+    <footer>
+        <div class="footer_section">[Секция футера 1]</div>
+        <div class="footer_section">[Секция футера 2]</div>
+        <div class="footer_section">[Секция футера 3]</div>
+        <div class="footer_section">[Секция футера 4]</div>
+    </footer>
+
+</body>
+
+</html>
