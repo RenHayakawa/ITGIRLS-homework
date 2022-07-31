@@ -1,0 +1,126 @@
+    html {
+        box-sizing: border-box;
+    }
+
+    *,
+    *::before,
+    *::after {
+        box-sizing: inherit;
+    }
+
+    .header {
+        display: flex;
+        flex-flow: row wrap;
+        align-items: center;
+        height: 65px;
+        width: 1440px;
+        background-color: white;
+    }
+
+    .header_nav {
+        display: flex;
+        font-family: 'Montserrat', sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 10px;
+    }
+
+    .header_list1 {
+        display: flex;
+        align-items: center;
+        list-style-type: none;
+    }
+
+    .header_list1_item {
+        margin-right: 32px;
+    }
+
+    .header_list1_link {
+        color: rgba(0, 0, 0, 0.3);
+        text-decoration: none;
+    }
+
+    .header_list2_item:first-child {
+        margin-right: 80px;
+    }
+
+    .header_logo {
+        display: flex;
+        align-self: center;
+        width: 98px;
+        height: 13px;
+        margin-left: 168px;
+        margin-right: 192px;
+    }
+
+    .header_list2 {
+        display: flex;
+        align-items: center;
+        list-style-type: none;
+    }
+
+    .header_list2_item {
+        margin-right: 32px;
+    }
+
+    .header_list2_item:last-child {
+        padding: 6px 18px 6px 18px;
+        margin-right: 98px;
+        margin-left: 18px;
+        background-color: black;
+    }
+
+    .header_list2_link {
+        color: rgba(0, 0, 0, 0.3);
+        text-decoration: none;
+    }
+
+    .header_list2_item #buy {
+        color: white;
+    }
+
+    #main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        align-content: center;
+        width: 1440px;
+        height: 800px;
+        background-image: url(../images/background_photo.jpg);
+        color: white;
+    }
+
+    h1 {
+        font: normal 400 57px/67px Roboto, sans-serif;
+        letter-spacing: 0.81px;
+    }
+
+    p,
+    .main_choice {
+        font-style: normal;
+        font-weight: 400;
+        font-family: 'Montserrat', sans-serif;
+    }
+
+    p {
+        margin-top: 33px;
+        margin-bottom: 60px;
+        font-size: 16px;
+        line-height: 20px;
+        letter-spacing: 0.44px;
+    }
+
+    .main_choice {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .main_choice a {
+        padding: 8px 50px 8px 50px;
+        margin: 20px;
+        border: 1px solid white;
+        letter-spacing: 2px;
+        text-decoration: none;
+        color: white;
+    }
