@@ -40,8 +40,8 @@
         text-decoration: none;
     }
 
-    .header_list2_item:first-child {
-        margin-right: 80px;
+    .header_list1_item:first-child {
+        margin-left: 80px;
     }
 
     .header_logo {
@@ -65,7 +65,7 @@
 
     .header_list2_item:last-child {
         padding: 6px 18px 6px 18px;
-        margin-right: 98px;
+        margin-right: 62px;
         margin-left: 18px;
         background-color: black;
     }
