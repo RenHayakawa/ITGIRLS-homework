@@ -1,0 +1,141 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 1fr 2fr;
+    grid-template-areas:
+        "header header"
+        "main main";
+    width: 1440px;
+    height: 728px;
+}
+
+.header {
+    grid-area: header;
+    display: grid;
+    grid-template-areas: "header_logo nav";
+    height: 60px;
+    width: 1440px;
+    border-bottom: 1px solid #202020;
+}
+
+.header_logo {
+    grid-area: header_logo;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    width: 204px;
+    border-right: 1px solid #202020;
+}
+
+#nav_item1,
+#nav_item2,
+#nav_item3,
+p,
+.main_section_button {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    color: #202020;
+}
+
+.nav {
+    grid-area: nav;
+    display: grid;
+    grid-template-columns: 1fr repeat(2, 157px);
+    width: 1235px;
+}
+
+.nav a {
+    display: grid;
+    align-items: center;
+    justify-items: center;
+}
+
+#nav_item1,
+#nav_item2,
+#nav_item3 {
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 25px;
+    letter-spacing: 0.27px;
+}
+
+#nav_item1,
+#nav_item2 {
+    border-right: 1px solid #202020;
+}
+
+#nav_item1 {
+    padding-right: 806px;
+}
+
+#nav_item3 {
+    background-color: #B8A4FD;
+}
+
+.main {
+    grid-area: main;
+}
+
+.main_section {
+    display: grid;
+    grid-template-areas:
+        "section_text main_img";
+    height: 667px;
+}
+
+.section_text {
+    grid-area: section_text;
+}
+
+h1 {
+    margin-top: 45px;
+    margin-left: 50px;
+    margin-bottom: 24px;
+    font: normal 400 110px/110px 'Roboto', sans-serif;
+}
+
+p {
+    margin-left: 64px;
+    width: 353px;
+    height: 76px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 25px;
+    letter-spacing: 0.27px;
+}
+
+.main_section_button {
+    margin-top: 57px;
+    margin-left: 50px;
+    width: 123px;
+    height: 39px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 29px;
+    letter-spacing: 0.24px;
+    border-radius: 4px;
+    border: none;
+    background-color: #B8A4FD;
+}
+
+.main_section_button:hover {
+    box-shadow: 0 0 10px #5427f5;
+}
+
+.main_img {
+    grid-area: main_img;
+    margin: 67px 50px 96px;
+    width: 770px;
+    height: 504px;
+}
