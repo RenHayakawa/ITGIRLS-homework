@@ -257,7 +257,7 @@
         #main {
             display: flex;
             flex-direction: column;
-            width: fit-content;
+            width: 100vw;
             background-image: url(../images/background_photo.jpg);
             background-size: cover;
             background-repeat: no-repeat;
