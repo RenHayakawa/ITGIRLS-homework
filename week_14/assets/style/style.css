@@ -1,0 +1,38 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+div {
+    display: flex;
+    justify-content: center;
+}
+
+.left-arrow,
+.right-arrow {
+    width: 5%;
+}
+
+.left-arrow {
+    transform: rotate(180deg);
+}
+
+.left-arrow:hover,
+.right-arrow:hover {
+    cursor: pointer;
+}
+
+.pictures {
+    width: 50%;
+    margin: 0 20px;
+}
+
+#img2,
+#img3 {
+    display: none;
+}

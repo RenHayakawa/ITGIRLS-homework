@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    .wrapper {
+        display: flex;
+    }
+
+    .block {
+        margin: 10px;
+        padding: 50px;
+        background-color: gray;
+    }
+
+    .new_color1 {
+        background-color: rgba(136, 177, 136, 0.74);
+    }
+
+    .new_color2 {
+        background-color: rgba(122, 180, 122, 0.829);
+    }
+
+    .new_color3 {
+        background-color: rgba(109, 185, 109, 0.89);
+    }
+</style>
+
+<body>
+    <div class="wrapper">
+        <div class="block" onclick="changeColor1(this)">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+            Itaque
+            expedita
+            dolore, esse provident
+            possimus amet animi laborum, laudantium hic alias asperiores cum, odit perspiciatis! Mollitia laudantium
+            odit saepe suscipit rem!</div>
+        <div class="block" onclick="changeColor2(this)">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+            Beatae
+            excepturi tenetur architecto
+            sapiente unde ex provident distinctio nemo rem cum in laborum ullam sit repellendus eum voluptatem, et magni
+            ea.</div>
+        <div class="block" onclick="changeColor3(this)">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Reiciendis
+            voluptatem facilis dolor
+            eos, quas nostrum dolore corrupti, soluta quia veniam totam qui. Harum modi sunt quibusdam ducimus et quos
+            saepe.</div>
+    </div>
+
+    <script>
+        function changeColor1(sender) {
+            console.log(sender);
+            sender.classList.add("new_color1")
+        }
+
+        function changeColor2(sender) {
+            console.log(sender);
+            sender.classList.add("new_color2")
+        }
+
+        function changeColor3(sender) {
+            console.log(sender);
+            sender.classList.add("new_color3")
+        }
+    </script>
+</body>
+
+</html>
