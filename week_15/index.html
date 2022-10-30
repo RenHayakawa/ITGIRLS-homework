@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/styles/normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/styles/index.css">
+    <title>Volunteer Recruitment Form</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <img src="./assets/images/logo.png" alt="Logo" class="logo">
+            <div class="header__text">
+                <h3>Volunteer Recruitment Form</h3>
+                <div class="description">
+                    Fill in the form below to volunteer to our organization
+                </div>
+            </div>
+        </header>
+        <form class="form">
+            <div class="form__part1">
+                <label for="firstName">Name</label>
+                <div class="form__part1_name">
+                    <input onchange="checkInputfirstName()" type="text" id="firstName" placeholder="First Name">
+                    <div id="firstNameAlert"></div>
+                    <input onchange="checkInputlastName()" type="text" id="lastName" placeholder="Last Name">
+                    <div id="lastNameAlert"></div>
+                </div>
+            </div>
+            <div class="form__part2">
+                <label for="email">E-mail</label>
+                <div class="form__part2_email">
+                    <input onchange="checkInputEmail()" type="email" id="email" placeholder="myname@example.com">
+                    <div id="emailAlert"></div>
+                </div>
+            </div>
+            <div class="form__part3">
+                <label for="phone">Phone Number</label>
+                <div class="form__part3_phone">
+                    <input onchange="checkInputPhone()" type="tel" id="phone" placeholder="+7хххххххххх">
+                    <div id="phoneAlert"></div>
+                </div>
+            </div>
+            <div class="form__part4">
+                <label for="country">Address</label>
+                <div class="form__part4_address">
+                    <input onchange="checkInputCountry()" type="text" id="country" placeholder="Country">
+                    <div id="countryAlert"></div>
+                    <input onchange="checkInputRegion()" type="text" id="region" placeholder="Region">
+                    <div id="regionAlert"></div>
+                    <input onchange="checkInputCity()" type="text" id="city" placeholder="City">
+                    <div id="cityAlert"></div>
+                </div>
+            </div>
+            <div class="form__part5">
+                <label for="timeFrom">
+                    Enter a range of work hours per week
+                </label>
+                <div class="form__part5_time">
+                    <input onchange="checkInputTimeFrom()" type="number" id="timeFrom" placeholder="From">
+                    <div id="timeFromAlert"></div>
+                    <input onchange="checkInputTimeTo()" type="number" id="timeTo" placeholder="To">
+                    <div id="timeToAlert"></div>
+                </div>
+            </div>
+        </form>
+        <div class="button-wrapper">
+            <button id="button">Recrute me</button>
+        </div>
+    </div>
+    <script src="./index.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background</title>
+</head>
+
+<style>
+    html {
+        box-sizing: border-box;
+    }
+
+    *,
+    *::before,
+    *::after {
+        box-sizing: inherit;
+    }
+
+    body {
+        display: flex;
+    }
+
+    #label {
+        margin-right: 20px;
+    }
+</style>
+
+<body>
+    <div id="label">Выберите тему:</div>
+    <select onchange="selectTheme()" id="choosingTheme">
+        <option value="light">Белая</option>
+        <option value="dark">Тёмная</option>
+        <option value="blue">Синяя</option>
+    </select>
+
+    <script>
+
+        function selectTheme() {
+            switch (document.getElementById("choosingTheme").value) {
+                case "light":
+                    document.body.style.backgroundColor = "white";
+                    document.getElementById("label").style.color = "black"
+                    break;
+                case "dark":
+                    document.body.style.backgroundColor = "rgba(0, 0, 0, 0.8)";
+                    document.getElementById("label").style.color = "white"
+                    break;
+                case "blue":
+                    document.body.style.backgroundColor = "rgb(41, 41, 94)";
+                    document.getElementById("label").style.color = "rgb(231 181 213)"
+                    break;
+            }
+        }
+
+    </script>
+</body>
+
+</html>
