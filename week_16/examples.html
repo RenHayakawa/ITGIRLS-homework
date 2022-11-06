@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //1-й пример
+        let array = ['js', 'css', 'html'];
+        console.log(array[0]);
+
+        //2-й пример
+        let array1 = [0, 1, false, 2, undefined, '', 3, null];
+        let array1Filtered = array1.filter(el => typeof (el) == "number");
+        console.log(array1Filtered);
+
+        //3-й пример
+        let array2 = [[1, 2], [1, 2, 3], [1, 2, 3, 4]];
+        console.log(array2);
+        let el = array2.findIndex(el => el.length > 3);
+        console.log(el);
+    </script>
+</body>
+
+</html>
