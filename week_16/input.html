@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="text">Введите число:</div>
+    <input onchange="inputEnter()" id="input" type="number">
+    <button id="button">Готово</button>
+    <input id="inputSort" type="text" placeholder="Сортировка массива">
+    <input id="inputSum" type="text" placeholder="Сумма элементов массива">
+    <button onclick="buttonDelete()" id="buttonDelete">Стереть всё</button>
+    <script>
+
+        let newArray = [];
+
+        function inputEnter() {
+            let input = document.getElementById("input").value;
+            console.log(input);
+            newArray.push(input);
+            console.log(newArray);
+            document.getElementById("input").value = "";
+        }
+
+        function inputSort() {
+            let inputSort = document.getElementById("inputSort");
+            inputSort.value = newArray.sort()
+        }
+
+        function inputSum() {
+            let inputSum = document.getElementById("inputSum");
+            for (let i = 0; i < newArray.length; i++) {
+                inputSum.value = Number(inputSum.value) + Number(newArray[i]);
+            }
+            return inputSum.value;
+        }
+
+        function buttonDelete() {
+            let inputSum = document.getElementById("inputSum");
+            let inputSort = document.getElementById("inputSort");
+            newArray.length = 0;
+            console.log(newArray);
+            inputSum.value = "";
+            inputSort.value = "";
+        }
+
+        let button = document.getElementById("button");
+        button.addEventListener("click", inputSort);
+        button.addEventListener("click", inputSum);
+    </script>
+</body>
+
+</html>
