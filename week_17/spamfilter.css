@@ -1,0 +1,19 @@
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+#chat {
+    height: 200px;
+}
+
+#sendButton {
+    width: 250px;
+    margin: 20px auto;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: rgb(250, 202, 202);
+    border: 1px solid rgb(212, 171, 171);
+    color: rgb(121, 71, 71);
+}
