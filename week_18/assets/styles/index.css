@@ -1,0 +1,191 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+.wrapper {
+    padding: 40px 200px;
+    background-color: rgb(66 146 217);
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 0 40px 0;
+}
+
+.logo {
+    width: 100px;
+    margin-right: 100px;
+}
+
+.header__text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+h3 {
+    margin: 0 0 20px 0;
+    text-align: center;
+    font: normal 500 40px/40px 'Mukta', sans-serif;
+}
+
+.description {
+    text-align: center;
+    font: normal 300 20px/20px 'Mukta', sans-serif;
+}
+
+label {
+    font: normal 300 18px/18px 'Mukta', sans-serif;
+}
+
+input {
+    font: normal 300 16px/20px 'Mukta', sans-serif;
+}
+
+input::placeholder {
+    font: normal 300 16px/20px 'Mukta', sans-serif;
+}
+
+/*Форма*/
+
+.form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+    padding: 30px 25%;
+    background-color: white;
+}
+
+input {
+    margin: 15px 0 0 0;
+}
+
+input::-webkit-inner-spin-button,
+input::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+#firstName,
+#email,
+#phone,
+#country,
+#timeFrom {
+    margin-top: 0;
+}
+
+input+div {
+    font: normal 300 16px/20px 'Mukta', sans-serif;
+    color: rgb(255, 2, 2);
+}
+
+/*Поля имени*/
+
+.form__part1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.form__part1_name {
+    display: flex;
+    flex-direction: column;
+}
+
+/*Поле почты*/
+
+.form__part2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 30px 0;
+}
+
+.form__part2_email {
+    display: flex;
+    flex-direction: column;
+}
+
+/*Поле телефона*/
+
+.form__part3 {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 30px 0;
+}
+
+.form__part3_phone {
+    display: flex;
+    flex-direction: column;
+}
+
+/*Поля адреса*/
+
+.form__part4 {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.form__part4_address {
+    display: flex;
+    flex-direction: column;
+}
+
+/*Поля времени*/
+
+.form__part5 {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 30px 0 0 0;
+}
+
+.form__part5_time {
+    display: flex;
+    flex-direction: column;
+}
+
+/*Кнопка*/
+.button-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 40px 0 0 0;
+}
+
+button {
+    padding: 15px 40px;
+    font: normal 300 20px/20px 'Mukta', sans-serif;
+    text-transform: uppercase;
+    color: white;
+    border: 0;
+    border-radius: 30px;
+    background-color: rgb(64 64 98);
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: rgb(49, 49, 75);
+}
+
+#errorsList {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    line-height: 25px;
+    color: rgb(247, 118, 118);
+}
