@@ -12,20 +12,14 @@ document.addEventListener("DOMContentLoaded", function () {
     existingMessage();
 });
 
-function sendMessage() {
+function checkSpam() {
     let textarea = document.getElementById("textarea").value;
-    array.push(textarea);
+    let replace = textarea.replace(/виагра/ig, "******")
+    array.push(replace);
     console.log(array);
     document.getElementById("textarea").value = "";
     existingMessage();
 }
 
-function checkSpam() {
-    let string = array.join(" ");
-    let element = string.replace(/viagra/ig, "***");
-    console.log(element);
-}
-
 let sendButton = document.getElementById("sendButton");
-sendButton.addEventListener("click", sendMessage);
 sendButton.addEventListener("click", checkSpam);
