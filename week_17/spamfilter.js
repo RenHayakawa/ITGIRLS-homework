@@ -19,6 +19,13 @@ function checkSpam() {
     console.log(array);
     document.getElementById("textarea").value = "";
     existingMessage();
+
+    // Сохранение данных в LocalStorage
+    let arrayToString = array.join();
+    localStorage.setItem("comments", arrayToString);
+    let dataSorage = localStorage.getItem("comments");
+    let dataSorageToArray = dataSorage.split(",");
+    console.log(dataSorageToArray);
 }
 
 let sendButton = document.getElementById("sendButton");
