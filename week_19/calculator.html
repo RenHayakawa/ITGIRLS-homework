@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+</head>
+
+<body>
+    <input type="number" placeholder="Первое число" id="firstNumber">
+    <input type="number" placeholder="Второе число" id="secondNumber">
+    <button id="buttonAddition">+</button>
+    <button id="buttonSubstraction">-</button>
+    <button id="buttonMultiplication">x</button>
+    <button id="buttonDivision">/</button>
+    <input type="text" placeholder="Результат" id="result">
+    <button id="buttonReset">Стереть</button>
+
+    <script>
+        let firstInput = document.getElementById("firstNumber"); //1-е число
+        let secondInput = document.getElementById("secondNumber"); //2-е число
+
+        const buttonAddition = document.getElementById("buttonAddition");
+        const buttonSubstraction = document.getElementById("buttonSubstraction");
+        const buttonMultiplication = document.getElementById("buttonMultiplication");
+        const buttonDivision = document.getElementById("buttonDivision");
+        const buttonReset = document.getElementById("buttonReset");
+
+        class Calculator {
+            static addition() {
+                let num1 = Number(firstInput.value);
+                let num2 = Number(secondInput.value);
+                let result = num1 + num2;
+                document.getElementById("result").value = result;
+            }
+
+            static substraction() {
+                let num1 = Number(firstInput.value);
+                let num2 = Number(secondInput.value);
+                let result = num1 - num2;
+                document.getElementById("result").value = result;
+            }
+
+            static multiplication() {
+                let num1 = Number(firstInput.value);
+                let num2 = Number(secondInput.value);
+                let result = num1 * num2;
+                document.getElementById("result").value = result;
+            }
+
+            static division() {
+                let num1 = Number(firstInput.value);
+                let num2 = Number(secondInput.value);
+                let result = num1 / num2;
+
+                if (num2 === 0) {
+                    document.getElementById("result").value = "На ноль делить нельзя";
+                }
+                else { document.getElementById("result").value = result; }
+            }
+
+            static reset() {
+                firstInput.value = "";
+                secondInput.value = "";
+                result.value = "";
+            }
+        }
+
+        buttonAddition.addEventListener("click", Calculator.addition);
+        buttonSubstraction.addEventListener("click", Calculator.substraction);
+        buttonMultiplication.addEventListener("click", Calculator.multiplication);
+        buttonDivision.addEventListener("click", Calculator.division);
+        buttonReset.addEventListener("click", Calculator.reset);
+
+    </script>
+</body>
+
+</html>
