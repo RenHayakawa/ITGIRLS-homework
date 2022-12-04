@@ -134,6 +134,21 @@ for (let superhero of superheroes) {
 }
 document.getElementById("container").innerHTML = container;
 
+let array = [];
+
+function getScore() {
+    let scores = document.querySelectorAll("#scores");
+    for (let score of scores) {
+        array.push(score.value);
+        score.value = "";
+    }
+
+    let arrayToStr = JSON.stringify(array);
+    localStorage.setItem("heroesScore", arrayToStr);
+}
+
+let button = document.getElementById("button");
+button.addEventListener("click", getScore);
 
 
 
