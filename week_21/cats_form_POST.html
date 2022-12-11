@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cat's form</title>
+</head>
+
+<style>
+    input:required:valid {
+        border-color: rgb(73, 194, 79);
+        border-width: 3px;
+    }
+</style>
+
+<body>
+    <h1>Анкета питомца</h1>
+    <form>
+        <fieldset>
+            <legend>Информация о владельце</legend>
+            <div><label for="second_name">Фамилия</label>
+                <input type="text" id="second_name" placeholder="Иванова" pattern="[А-Я]{1}[a-яё]{1,}" required>
+            </div>
+            <div><label for="first_name">Имя</label>
+                <input type="text" id="first_name" placeholder="Инна" pattern="[А-Я]{1}[a-яё]{1,}" required>
+            </div>
+            <div><label for="phone">Номер телефона</label>
+                <input type="tel" id="phone" placeholder="+7 111 2223344" pattern="\+\d\s\d{3}\s\d{7}" required>
+            </div>
+        </fieldset>
+        <div><label for="pat_name">Кличка питомца</label>
+            <input type="text" id="pat_name" placeholder="Печенька" pattern="[А-Я]{1}[a-яё]{1,}" required>
+        </div>
+        <div>Порода питомца
+            <select required>
+                <option selected disabled value=""></option>
+                <option value="1">Сибирская</option>
+                <option value="2">Сиамская</option>
+                <option value="3">Сфинкс</option>
+                <option value="4">Персидская</option>
+                <option value="5">Беспородная</option>
+            </select>
+        </div>
+        <div>Питание
+            <div><input type="checkbox" id="dry_food" value="1">
+                <label for="dry_food">Сухой корм</label>
+            </div>
+            <div><input type="checkbox" id="wet_food" value="2">
+                <label for="wet_food">Влажный корм</label>
+            </div>
+            <div></div><input type="checkbox" id="natural_food" value="3">
+            <label for="natural_food">Натуральный корм</label>
+        </div>
+        <div>Пол питомца
+            <div><label for="male">Самец</label>
+                <input type="radio" id="male" name="sex" required>
+            </div>
+            <div><label for="female">Самка</label>
+                <input type="radio" id="female" name="sex">
+            </div>
+        </div>
+        <div>Комментарий<br>
+            <textarea rows="5" cols="50"></textarea>
+        </div>
+        <div>Загрузите фото питомца <input type="file"></div>
+        <div>
+            <button>Сохранить</button>
+        </div>
+    </form>
+    <script src="./cats_form_POST.js"></script>
+</body>
+
+</html>
