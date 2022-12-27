@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find GIF</title>
+</head>
+
+<body>
+    <div>Какую GIF-ку ищем?</div>
+    <input id="input" type="text">
+    <button id="button">Искать</button>
+    <div id="container"></div>
+</body>
+<script>
+    function findGif() {
+        let gifName = document.getElementById("input").value;
+        console.log(gifName);
+        let container = "";
+
+        fetch("https://api.giphy.com/v1/gifs/search?api_key=B4n0Y8n3VmF3K2I8jWKu0ieB5t2HZ0Gi&q=" + gifName + "&limit=5&offset=0&rating=g&lang=en")
+            .then(response => response.json())
+            .then(gifs => {
+                console.log(gifs)
+                for (let gif of gifs.data) {
+                    console.log(gif);
+                    console.log(gif.images.original.url);
+                    container += `<img src="${gif.images.original.url}" class="gifImg"></img>`
+                }
+
+                document.getElementById("container").innerHTML = container;
+            })
+            .catch(error => console.log(error));
+    }
+
+    let button = document.getElementById("button");
+    button.addEventListener("click", findGif);
+</script>
+
+</html>
