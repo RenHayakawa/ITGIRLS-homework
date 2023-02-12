@@ -3,10 +3,12 @@ import Header from '../Header/Header';
 import Footer from '../Footer/Footer';
 
 function WordsList() {
-    <div className='container'>
-        <Header></Header>
-        <Footer></Footer>
-    </div>
+    return (
+        <div className='container'>
+            <Header></Header>
+            <Footer></Footer>
+        </div>
+    )
 }
 
 export default WordsList;
