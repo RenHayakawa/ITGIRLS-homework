@@ -1,0 +1,56 @@
+.header {
+    margin: 0;
+    padding: 20px;
+    font-size: 20px;
+    color: white;
+    background-color: rgb(79, 167, 181);
+}
+
+.main span:first-child {
+    vertical-align: top;
+}
+
+.blue {
+    background-color: rgba(68, 183, 250, 0.766);
+}
+
+.green {
+    background-color: rgba(41, 128, 41, 0.684);
+}
+
+.red {
+    background-color: rgba(166, 2, 2, 0.718);
+}
+
+.black {
+    background-color: rgba(0, 0, 0, 0.773);
+}
+
+.blue,
+.green,
+.red,
+.black {
+    padding: 40px;
+    color: white;
+}
+
+.text_main {
+    font-size: 80px;
+}
+
+.condition {
+    padding: 10px;
+    color: gray;
+    background-color: rgb(243, 240, 240);
+}
+
+.footer {
+    padding: 10px;
+    color: gray;
+    background-color: rgb(225, 223, 223);
+}
+
+.isSelected {
+    border: 5px solid rgba(148, 151, 151, 0.701);
+    box-shadow: 0 0 30px 5px gray;
+}

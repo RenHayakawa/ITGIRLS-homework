@@ -1,0 +1,27 @@
+[
+    {
+        "header": "Безлимитный 300",
+        "price": "300",
+        "condition": "10",
+        "color": "blue"
+    },
+    {
+        "header": "Безлимитный 450",
+        "price": "450",
+        "condition": "50",
+        "color": "green"
+    },
+    {
+        "header": "Безлимитный 550",
+        "price": "550",
+        "condition": "100",
+        "color": "red",
+        "select": "isSelected"
+    },
+    {
+        "header": "Безлимитный 1000",
+        "price": "1000",
+        "condition": "200",
+        "color": "black"
+    }
+]
