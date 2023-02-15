@@ -6,12 +6,11 @@ function App() {
   return (
     <div className="App">
       {
-        cardData.map((elem) =>
-          <Card header={elem.header}
+        cardData.map((elem, index) =>
+          <Card key={index} header={elem.header}
             price={elem.price}
             condition={elem.condition}
             color={elem.color}
-            select={elem.select}
           ></Card>
         )
       }

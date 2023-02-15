@@ -15,8 +15,7 @@
         "header": "Безлимитный 550",
         "price": "550",
         "condition": "100",
-        "color": "red",
-        "select": "isSelected"
+        "color": "red"
     },
     {
         "header": "Безлимитный 1000",
