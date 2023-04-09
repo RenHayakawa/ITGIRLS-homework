@@ -1,5 +1,6 @@
 import './App.css';
 import { useState } from 'react';
+import Basic from './Basic';
 
 function App() {
 
@@ -23,6 +24,7 @@ function App() {
     <div className="App">
       <input type="text" value={inputValue} onChange={handleChange} />
       <button onClick={handleValidate}>Отправить</button>
+      <Basic />
     </div>
   );
 }
