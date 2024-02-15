@@ -1,0 +1,80 @@
+body,
+input {
+    color: white;
+    background-color: black;
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    gap: 50px;
+}
+
+.info,
+.chat {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+h2 {
+    color: cornflowerblue;
+}
+
+.input-container {
+    width: 305px;
+    border: 2px dashed cornflowerblue;
+}
+
+label,
+.input-container {
+    margin-bottom: 15px;
+}
+
+input {
+    width: 300px;
+    border: none;
+}
+
+input:focus {
+    outline: none;
+}
+
+#comment {
+    height: 150px;
+}
+
+button {
+    width: 100px;
+    padding: 10px 30px;
+    display: flex;
+    justify-content: center;
+    border: none;
+    background-color: cornflowerblue;
+    border-radius: 5px;
+    color: white;
+}
+
+.newMessage {
+    padding: 10px;
+    border-bottom: 2px dashed cornflowerblue;
+}
+
+.user-container {
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+    column-gap: 40px;
+}
+
+.user-image {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+
+.user-name {
+    font-size: larger;
+    font-weight: bolder;
+    color: rgb(197, 176, 117);
+}
